@@ -1,0 +1,24 @@
+// Para esta leccion se creo una archivo externo
+// data dentro del mismo heroes.js
+
+// Primera opcion de importacion
+// import { heroes } from "./data/heroes";
+
+// Segunda opcion de importacion, si realizo 
+// una exportacion por defecto, ya no es 
+// necesario las llaves 
+import heroes , { owners } from "../data/heroes";
+
+console.log(owners);
+
+export default getHeroeById = (id) => {
+  return heroes.find((heroe)=> heroe.id === id)
+};
+
+console.log(getHeroeById(3));
+
+/* import zapatillas, { relojes } from "./data/heroes";
+
+
+console.log(zapatillas);
+console.log(relojes); */

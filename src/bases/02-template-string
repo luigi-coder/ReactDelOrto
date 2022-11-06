@@ -1,0 +1,11 @@
+const nombre = "Luis";
+const apellido = "Salinas";
+
+console.log(`${nombre} ${apellido}`)
+
+function getSaludo(name){
+
+  return 'hello ' + name;
+}
+
+console.log(`Este es un texto: ${getSaludo(nombre)}`)

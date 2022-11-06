@@ -1,0 +1,23 @@
+// Arreglos - coleccion de informacion en una misma variable
+const array = [];
+console.log(array);
+
+// push del 1 al 4
+array.push(1);
+array.push(2);
+array.push(3);
+array.push(4);
+console.log(array);
+
+// spread operador del 1 al 4
+const array2 = [...array, 5];
+console.log(array2);
+
+const arrayPorDos = array.map((e)=> e * 2);
+
+console.log(arrayPorDos);
+
+
+const suma = ((a,b)=>{
+    return a + b;
+})
